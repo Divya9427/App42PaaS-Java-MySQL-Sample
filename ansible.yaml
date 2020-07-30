@@ -1,0 +1,18 @@
+---
+- hosts: all
+  remote_user: root
+  become: yes
+  become_user: root
+  become_method: sudo
+  tasks:
+    - name: Copying the jar file
+      copy:
+        src: /var/lib/jenkins/workspace/wardeploy/target/hello-1.0.war
+        dest: /usr/share/tomcat/webapps/hello-1.0.war
+   # - name: Coptying the sh file
+    #  copy:
+     #   src: newdeploy.sh
+      #  dest: /root/newdeploy.sh
+       # mode: 0777
+    #- name: Deployment
+     # command: sh /root/newdeploy.sh
