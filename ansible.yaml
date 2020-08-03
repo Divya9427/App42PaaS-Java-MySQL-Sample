@@ -1,5 +1,5 @@
 ---
-- hosts: tomcat-servers
+- hosts: tomcat_servers
   remote_user: root
   become: yes
   become_user: root
