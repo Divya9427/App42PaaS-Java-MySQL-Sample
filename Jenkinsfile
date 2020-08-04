@@ -5,7 +5,7 @@ pipeline {
         parameters{
     choice(
         name: 'appname',
-        choices: ['app1' 'app2' 'app3'],
+        choices: ['app1' ,'app2' ,'app3'],
         description: 'select a app'
         }
         }
