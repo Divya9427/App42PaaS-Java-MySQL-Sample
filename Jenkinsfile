@@ -22,13 +22,15 @@ pipeline {
             when{
                 expression{
                     if(params.MYSQL || params.Java)
-                    return true
+                    {
+                        return true
                             } else {
                                        return false
                                 }
+                           }
                  }
-                                    }
-                 }
+        }
+        }
         
         stage ('Compile') {
 
