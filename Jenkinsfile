@@ -8,6 +8,7 @@ pipeline {
         choices: ['MYSQL' ,'PetClinic' ,'SpringBoot'],
         description: 'select a app'
         )
+        choice(
         name: 'App Type',
         choices: ['Java' ,'DotNet' ,'NodeJS'],
         description: 'select app type'
