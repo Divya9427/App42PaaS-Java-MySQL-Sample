@@ -8,10 +8,6 @@ pipeline {
         choices: ['MYSQL' ,'PetClinic' ,'SpringBoot'],
         description: 'select a app'
         )
-        name: 'Git Repo',
-        choices: ['https://github.com/Divya9427/App42PaaS-Java-MySQL-Sample.git' ,'PetClinic' ,'SpringBoot'],
-        description: 'select a Repo'
-        )
         name: 'App Type',
         choices: ['Java' ,'DotNet' ,'NodeJS'],
         description: 'select app type'
@@ -20,6 +16,16 @@ pipeline {
 
   
     stages {
+        
+        stage ('MySQL Deployment') {
+            when{
+                expression{
+                    if(params.MYSQL || params.Java)
+                    return true
+                } else {
+                    return false
+                }
+            }
         stage ('Compile') {
 
             steps {
