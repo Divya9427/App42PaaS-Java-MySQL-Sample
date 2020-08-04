@@ -13,6 +13,7 @@ public class Util {
 	static {
 		try {
 			dbFile = new File("ROOT/Config.properties");
+			System.out.println("dbFile................." + dbFile);
 			dbProps.load(new FileInputStream(dbFile.getAbsolutePath()));
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException(e);
