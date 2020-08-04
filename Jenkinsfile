@@ -17,8 +17,8 @@ pipeline {
 
   
     stages {
-        steps{
-        stage ('MySQL Deployment') {
+  steps {
+stage ('MySQL Deployment') {
             when{
                 expression{
                     if(params.MYSQL || params.Java)
