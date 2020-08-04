@@ -27,6 +27,7 @@ pipeline {
                     return false
                 }
             }
+        }
         stage ('Compile') {
 
             steps {
