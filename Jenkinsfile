@@ -19,8 +19,7 @@ pipeline {
     stages {
 
 stage ('MySQL Deployment') {
-      steps {
-            when{
+       when{
                 expression{
                     if(params.MYSQL || params.Java)
                     {
@@ -31,7 +30,7 @@ stage ('MySQL Deployment') {
                            }
                  }
         }
-        }
+      
         
         stage ('Compile') {
 
