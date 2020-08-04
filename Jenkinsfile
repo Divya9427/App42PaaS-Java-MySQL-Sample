@@ -17,17 +17,19 @@ pipeline {
 
   
     stages {
-        
+        steps{
         stage ('MySQL Deployment') {
             when{
                 expression{
                     if(params.MYSQL || params.Java)
                     return true
-                } else {
-                    return false
-                }
-            }
-        }
+                            } else {
+                                       return false
+                                }
+                 }
+                                    }
+                 }
+        
         stage ('Compile') {
 
             steps {
