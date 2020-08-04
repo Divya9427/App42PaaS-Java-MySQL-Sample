@@ -4,9 +4,17 @@ pipeline {
     
         parameters{
     choice(
-        name: 'appname',
-        choices: ['app1' ,'app2' ,'app3'],
+        name: 'Appname',
+        choices: ['MYSQL' ,'PetClinic' ,'SpringBoot'],
         description: 'select a app'
+        )
+        name: 'Git Repo',
+        choices: ['https://github.com/Divya9427/App42PaaS-Java-MySQL-Sample.git' ,'PetClinic' ,'SpringBoot'],
+        description: 'select a Repo'
+        )
+        name: 'App Type',
+        choices: ['Java' ,'DotNet' ,'NodeJS'],
+        description: 'select app type'
         )
         }
 
