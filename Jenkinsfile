@@ -2,6 +2,13 @@ pipeline {
     agent any
     
     
+        parameters{
+    choice(
+        name: 'appname',
+        choices: "MYSQL\nPetCLinic:,
+        description: 'select a app'
+        }
+        }
   
     stages {
         stage ('Compile') {
