@@ -8,8 +8,8 @@ import java.util.Properties;
 
 public class Util {
 
-	static Properties dbProps = new Properties();
-	static File dbFile = null;
+	public static Properties dbProps = new Properties();
+	public static File dbFile = null;
 	static {
 		try {
 			dbFile = new File("ROOT/Config.properties");
