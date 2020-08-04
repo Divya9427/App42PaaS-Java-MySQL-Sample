@@ -16,8 +16,8 @@ import com.shephertz.app42.paas.sample.util.Util;
 
 public class DBManager {
 
-	private DriverManagerDataSource dataSource = null;
-	private static final DBManager dsManager = new DBManager();
+	public DriverManagerDataSource dataSource = null;
+	public static final DBManager dsManager = new DBManager();
 	static {
 		try {
 			createTable("create table user(name varchar(255), email varchar(255), description text)");
