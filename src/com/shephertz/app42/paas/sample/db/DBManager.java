@@ -19,6 +19,12 @@ public class DBManager {
 	public DriverManagerDataSource dataSource = null;
 	public static final DBManager dsManager = new DBManager();
 	/*
+	 * Get DBManager Instance
+	 */
+	public static DBManager getInstance() {
+		return dsManager;
+	}
+	/*
 	 * Initialize MySql
 	 */
 	public DBManager() {
@@ -42,12 +48,7 @@ public class DBManager {
 		}
 	}
 
-	/*
-	 * Get DBManager Instance
-	 */
-	public static DBManager getInstance() {
-		return dsManager;
-	}
+	
 
 	/*
 	 * Get DriverManagerDatasource Instance
