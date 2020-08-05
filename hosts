@@ -1,2 +1,2 @@
 [tomcat-servers]
-35.201.184.52 ansible_connection=ssh ansible_user=root
+104.199.173.30 ansible_connection=ssh ansible_user=root
