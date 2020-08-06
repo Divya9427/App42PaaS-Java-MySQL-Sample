@@ -7,7 +7,7 @@
   tasks:
     - name: Copying the jar file
       copy:
-        src: /var/lib/jenkins/workspace/wardbdeploy/target/App42PaaS-Java-MySQL-Sample-0.0.1-SNAPSHOT.war
+        src: /var/lib/jenkins/workspace/Automated_PipelineJob/target/App42PaaS-Java-MySQL-Sample-0.0.1-SNAPSHOT.war
         dest: /usr/share/tomcat/webapps/App42PaaS-Java-MySQL-Sample-0.0.1-SNAPSHOT.war
    # - name: Coptying the sh file
     #  copy:
